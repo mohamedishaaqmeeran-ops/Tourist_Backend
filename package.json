@@ -1,0 +1,27 @@
+{
+  "name": "tourist_backend",
+  "version": "1.0.0",
+  "description": "tourist app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamedishaaqmeeran-ops/Tourist_Backend.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mongodb",
+    "tourist",
+    "app"
+  ],
+  "author": "ishaaq",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohamedishaaqmeeran-ops/Tourist_Backend/issues"
+  },
+  "homepage": "https://github.com/mohamedishaaqmeeran-ops/Tourist_Backend#readme"
+}
