@@ -1538,3 +1538,11 @@ GET /api/v1/bookings - 2026-05-01T15:39:25.094Z
 Body: undefined
 Cookies: {"csrftoken":"MXkpm0G9ygicvOnjZSelnG4AWQtoIwfp","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWY0NmNkNzhkNWFmZDkzZmE3YTRlYWQiLCJpYXQiOjE3Nzc2NDk4NDEsImV4cCI6MTc3NzY2MDY0MX0.S3e4Y_fTExait_30Voq6M7Xd6oaO6nx1m4rtShmREiU"}
 -----------------------------
+GET /api/v1/auth/getMe - 2026-05-01T15:48:30.506Z
+Body: undefined
+Cookies: {"csrftoken":"MXkpm0G9ygicvOnjZSelnG4AWQtoIwfp","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWY0NmNkNzhkNWFmZDkzZmE3YTRlYWQiLCJpYXQiOjE3Nzc2NDk4NDEsImV4cCI6MTc3NzY2MDY0MX0.S3e4Y_fTExait_30Voq6M7Xd6oaO6nx1m4rtShmREiU"}
+-----------------------------
+GET /api/v1/bookings - 2026-05-01T15:48:30.868Z
+Body: undefined
+Cookies: {"csrftoken":"MXkpm0G9ygicvOnjZSelnG4AWQtoIwfp","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWY0NmNkNzhkNWFmZDkzZmE3YTRlYWQiLCJpYXQiOjE3Nzc2NDk4NDEsImV4cCI6MTc3NzY2MDY0MX0.S3e4Y_fTExait_30Voq6M7Xd6oaO6nx1m4rtShmREiU"}
+-----------------------------
