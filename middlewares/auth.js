@@ -2,32 +2,57 @@ const jwt = require('jsonwebtoken');
 const { JWT_SECRET } = require('../utils/config');
 const User = require('../models/user');
 
+// auth middleware fix
+
+
 const isAuthenticated = async (req, res, next) => {
-
-    let token;
-
-    // ✅ First check Authorization header
-    if (req.headers.authorization && req.headers.authorization.startsWith("Bearer")) {
-        token = req.headers.authorization.split(" ")[1];
-    }
-
-    // ✅ Fallback to cookie (optional)
-    if (!token && req.cookies?.token) {
-        token = req.cookies.token;
-    }
-
-    if (!token) {
-        return res.status(401).json({ message: 'Unauthorized' });
-    }
-
     try {
+        let token = null;
+
+        // Authorization Header
+        if (
+            req.headers.authorization &&
+            req.headers.authorization.startsWith('Bearer ')
+        ) {
+            token = req.headers.authorization.split(' ')[1];
+        }
+
+        // Cookie Fallback
+        if (!token && req.cookies?.token) {
+            token = req.cookies.token;
+        }
+
+        if (!token) {
+            return res.status(401).json({
+                success: false,
+                message: 'Authentication required'
+            });
+        }
+
         const decoded = jwt.verify(token, JWT_SECRET);
-        req.userId = decoded.userId;
+
+        const user = await User.findById(decoded.userId).select('-password');
+
+        if (!user) {
+            return res.status(401).json({
+                success: false,
+                message: 'User not found'
+            });
+        }
+
+        req.user = user;
+        req.userId = user._id.toString();
+
         next();
     } catch (error) {
-        res.status(401).json({ message: 'Unauthorized', error: error.message });
+        return res.status(401).json({
+            success: false,
+            message: 'Invalid or expired token',
+            error: error.message
+        });
     }
 };
+
 
 const allowRoles = (roles) => {
     return async (req, res, next) => {

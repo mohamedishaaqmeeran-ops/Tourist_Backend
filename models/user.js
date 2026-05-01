@@ -16,40 +16,24 @@ const userSchema = new mongoose.Schema({
     },
     role: {
         type: String,
-        enum: ['user', 'journalist', 'admin'],
+        enum: ['user', 'consultant', 'admin'],
         default: 'user'
     },
     profilePicture: {
         type: String,
         default: ''
     },
-     assignedChannel: {
+     assignedConsultancy: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Channel',
+        ref: 'Consultancy',
         default: null
     },
     phone: {
         type: String,
     },
     
-   fcmToken: {
-    type: String
-},
-    preferences: {
-    categories: {
-        type: [String], 
-        default: []
-    },
-    frequency: {
-        type: String,
-        enum: ["immediate", "hourly", "daily"],
-        default: "immediate"
-    },
-    notificationsEnabled: {
-        type: Boolean,
-        default: true
-    }
-},
+ 
+    
     
     isVerified: {
         type: Boolean,

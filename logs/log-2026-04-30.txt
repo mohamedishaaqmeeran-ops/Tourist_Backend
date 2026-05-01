@@ -1,0 +1,16 @@
+POST /api/v1/auth/register - 2026-04-30T13:44:16.605Z
+Body: {"name":"ish","email":"ish@gmail.com","password":"123456"}
+Cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWYzNWI5ODA5YTIzNzgyY2ZhOTM1NWUiLCJpYXQiOjE3Nzc1NTYzODUsImV4cCI6MTc3NzU2NzE4NX0.heHWRv_8sI3Y66iVCMxIxWOzmd6jhwJJ9_WTnzZjzOA"}
+-----------------------------
+POST /api/v1/auth/login - 2026-04-30T13:44:23.890Z
+Body: {"email":"isha@gmail.com","password":"123456"}
+Cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWYzNWI5ODA5YTIzNzgyY2ZhOTM1NWUiLCJpYXQiOjE3Nzc1NTYzODUsImV4cCI6MTc3NzU2NzE4NX0.heHWRv_8sI3Y66iVCMxIxWOzmd6jhwJJ9_WTnzZjzOA"}
+-----------------------------
+POST /api/v1/auth/login - 2026-04-30T13:44:31.170Z
+Body: {"email":"ish@gmail.com","password":"123456"}
+Cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWYzNWI5ODA5YTIzNzgyY2ZhOTM1NWUiLCJpYXQiOjE3Nzc1NTYzODUsImV4cCI6MTc3NzU2NzE4NX0.heHWRv_8sI3Y66iVCMxIxWOzmd6jhwJJ9_WTnzZjzOA"}
+-----------------------------
+GET /api/v1/auth/getMe - 2026-04-30T13:44:35.070Z
+Body: undefined
+Cookies: {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWYzNWNiMWVkMGFiZTc1ZDcyMTEwMjUiLCJpYXQiOjE3Nzc1NTY2NzEsImV4cCI6MTc3NzU2NzQ3MX0.j1vbIEBg99OKqZMIEGbYgu1LLu5CIDA2r6PCqp8iVgI"}
+-----------------------------
